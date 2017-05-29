@@ -7,15 +7,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
-var common_1 = require("@angular/common");
+var shared_module_1 = require("../shared/shared.module");
 var product_list_component_1 = require("./product-list.component");
 var product_guard_service_1 = require("./product-guard.service");
 var product_service_1 = require("./product.service");
 var product_detail_component_1 = require("./product-detail.component");
 var product_filter_pipe_1 = require("./product-filter.pipe");
-var start_component_1 = require("../shared/start.component");
 var ProductModule = (function () {
     function ProductModule() {
     }
@@ -27,11 +25,9 @@ ProductModule = __decorate([
             product_list_component_1.ProductListComponent,
             product_detail_component_1.ProductDetailComponent,
             product_filter_pipe_1.ProductFilterPipe,
-            start_component_1.StartComponent,
         ],
         imports: [
-            forms_1.FormsModule,
-            common_1.CommonModule,
+            shared_module_1.SharedModule,
             router_1.RouterModule.forChild([
                 { path: 'products', component: product_list_component_1.ProductListComponent },
                 {
