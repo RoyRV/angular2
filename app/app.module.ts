@@ -6,7 +6,7 @@ import { RouterModule} from '@angular/router';
 
 import { AppComponent }  from './app.component';
 import { WelcomeComponent }  from './home/welcome.component';
-
+import {ProductDetailGuard } from './products/product-guard.service';
 
 import { ProductListComponent } from './products/product-list.component';
 import {ProductDetailComponent } from './products/product-detail.component';
@@ -20,7 +20,9 @@ import { StartComponent } from './shared/start.component';
     HttpModule,
     RouterModule.forRoot([
         { path : 'products' , component : ProductListComponent },
-        { path : 'product/:id' , component : ProductDetailComponent },
+        { path : 'product/:id' , 
+          component : ProductDetailComponent,
+          canActivate : [ProductDetailGuard] },
         { path : 'welcome' , component : WelcomeComponent },
         { path : '' , redirectTo :'welcome' , pathMatch : 'full' },
         { path : '**' , redirectTo :'welcome' , pathMatch : 'full' },
@@ -33,6 +35,9 @@ import { StartComponent } from './shared/start.component';
     ProductDetailComponent,
     ProductFilterPipe,
     StartComponent
+    ],
+    providers : [
+      ProductDetailGuard
     ],
   bootstrap: [ AppComponent ]
 })
