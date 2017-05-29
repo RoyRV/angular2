@@ -3,13 +3,12 @@ import { ProductService } from './products/product.service';
 @Component({
     selector: 'pm-app',
     template: `
-        <h1>Angular2: Getting Started</h1><br/>
-        <div>
+        <div class="container">
+            <h1>Angular2: Getting Started</h1><br/>
             <pm-products></pm-products>
         </div>
     `,
     providers : [ProductService]
 })
 export class AppComponent { 
-    pageTitle : string = 'Roy Test pageTitle';
 }

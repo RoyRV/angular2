@@ -10,14 +10,13 @@ var core_1 = require("@angular/core");
 var product_service_1 = require("./products/product.service");
 var AppComponent = (function () {
     function AppComponent() {
-        this.pageTitle = 'Roy Test pageTitle';
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'pm-app',
-        template: "\n        <h1>Angular2: Getting Started</h1><br/>\n        <div>\n            <pm-products></pm-products>\n        </div>\n    ",
+        template: "\n        <div class=\"container\">\n            <h1>Angular2: Getting Started</h1><br/>\n            <pm-products></pm-products>\n        </div>\n    ",
         providers: [product_service_1.ProductService]
     })
 ], AppComponent);

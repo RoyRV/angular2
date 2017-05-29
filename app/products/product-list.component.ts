@@ -16,13 +16,17 @@ export class ProductListComponent implements OnInit {
     pageTitle : string = "Product List";
     listFilter : string ='';
     products : IProduct[];
-
+    errorMessage : string = "";
     toogleImage() : void {
         this.showImage = !this.showImage;
     }
 
     ngOnInit():void{
-        this.products  =  this._productService.getProducts();
+         this._productService.getProducts()
+                            .subscribe(
+                                products => this.products = products,
+                                error => this.errorMessage = <any>error
+                            );
     }
 
     onRatingClicked(message : string) : void {
