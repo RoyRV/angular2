@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './home/welcome.component';
+import { AboutModule } from './about/about.module';
 import { ProductModule } from './products/product.module';
 
 @NgModule({
@@ -12,11 +13,12 @@ import { ProductModule } from './products/product.module';
     BrowserModule,
     HttpModule,
     RouterModule.forRoot([
-      { path: 'welcome', component: WelcomeComponent },
+      { path: 'welcome', component: WelcomeComponent }, 
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' },
     ]),
-    ProductModule
+    ProductModule,
+    AboutModule
   ],
   declarations: [
     AppComponent,

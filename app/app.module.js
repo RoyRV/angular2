@@ -12,6 +12,7 @@ var http_1 = require("@angular/http");
 var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
 var welcome_component_1 = require("./home/welcome.component");
+var about_module_1 = require("./about/about.module");
 var product_module_1 = require("./products/product.module");
 var AppModule = (function () {
     function AppModule() {
@@ -28,7 +29,8 @@ AppModule = __decorate([
                 { path: '', redirectTo: 'welcome', pathMatch: 'full' },
                 { path: '**', redirectTo: 'welcome', pathMatch: 'full' },
             ]),
-            product_module_1.ProductModule
+            product_module_1.ProductModule,
+            about_module_1.AboutModule
         ],
         declarations: [
             app_component_1.AppComponent,
