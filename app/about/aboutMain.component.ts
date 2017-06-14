@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
     styleUrls : ['app/about/aboutMain.component.css']
 })
 export class AboutMainComponent {
-    
+    public pageTitle: string = 'Welcome';
 }

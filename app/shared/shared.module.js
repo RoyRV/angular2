@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var start_component_1 = require("../shared/start.component");
+var my_checkbox_1 = require("../shared/components/my-checkbox");
 var SharedModule = (function () {
     function SharedModule() {
     }
@@ -17,14 +18,18 @@ var SharedModule = (function () {
 }());
 SharedModule = __decorate([
     core_1.NgModule({
-        declarations: [start_component_1.StartComponent],
+        declarations: [
+            start_component_1.StartComponent,
+            my_checkbox_1.MyCheckbox
+        ],
         imports: [
             common_1.CommonModule
         ],
         exports: [
             common_1.CommonModule,
             forms_1.FormsModule,
-            start_component_1.StartComponent
+            start_component_1.StartComponent,
+            my_checkbox_1.MyCheckbox
         ]
     })
 ], SharedModule);

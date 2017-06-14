@@ -8,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var aboutMain_component_1 = require("./aboutMain.component");
 var shared_module_1 = require("../shared/shared.module");
+var aboutMain_component_1 = require("./aboutMain.component");
+var aboutCheckbox_1 = require("./components/aboutCheckbox");
 var AboutModule = (function () {
     function AboutModule() {
     }
@@ -18,12 +19,14 @@ var AboutModule = (function () {
 AboutModule = __decorate([
     core_1.NgModule({
         declarations: [
-            aboutMain_component_1.AboutMainComponent
+            aboutMain_component_1.AboutMainComponent,
+            aboutCheckbox_1.AboutCheckbox
         ],
         imports: [
             shared_module_1.SharedModule,
             router_1.RouterModule.forChild([
                 { path: 'about', component: aboutMain_component_1.AboutMainComponent },
+                { path: 'aboutCheckbox', component: aboutCheckbox_1.AboutCheckbox },
             ])
         ],
         providers: []
