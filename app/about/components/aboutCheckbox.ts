@@ -6,12 +6,14 @@ import { Component } from '@angular/core';
 })
 export class AboutCheckbox {
     public title: string = 'About Checkbox';
+
     public defaultValue: boolean = true;
     public primaryValue: boolean = false;
     public sucessValue: boolean = true;
     public infoValue: boolean = false;
     public warningValue: boolean = true;
-    public errorValue: boolean = false;
+    public errorValue: boolean = false; 
+
 
     constructor() {
 
