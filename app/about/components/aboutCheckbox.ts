@@ -15,6 +15,7 @@ export class AboutCheckbox {
     private errorValue: boolean = false; 
     private codeHtml : string = "";
     private codeJs : string = "";
+    
     constructor() {
         this.codeHtml = '&lt;my-checkbox ' +
             'objId="demo" ' +

@@ -4,22 +4,26 @@ import { FormsModule } from '@angular/forms';
 import { StartComponent } from '../shared/start.component';
 import { MyCheckbox } from '../shared/components/my-checkbox';
 import { MyDatebox } from '../shared/components/my-datebox';
+import { MyDropdown } from '../shared/components/my-dropdown';
 
 @NgModule({
     declarations: [
         StartComponent,
         MyCheckbox,
         MyDatebox,
+        MyDropdown 
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        FormsModule
     ],
     exports: [
         CommonModule,
         FormsModule,
         StartComponent,
         MyCheckbox,
-        MyDatebox
+        MyDatebox,
+        MyDropdown 
     ]
 })
 export class SharedModule { }

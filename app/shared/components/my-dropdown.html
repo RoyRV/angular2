@@ -1,0 +1,13 @@
+<label id="dropDownLabel{{objId}}" attr.for="dropDownSelect{{objId}}">
+        {{name}}
+    </label>
+<select *ngIf="options"
+        [(ngModel)]="selected" 
+        class="form-control"
+        id="dropDownSelect{{oobjId}}" 
+        (ngModelChange)="onChange()">
+        <option *ngFor='let option of options '
+                [ngValue]="option" >
+            {{option.text}}
+        </option>
+    </select>

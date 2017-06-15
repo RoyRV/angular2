@@ -1,0 +1,71 @@
+<div class="componentContainer">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="componentTitle">
+                {{title}}
+            </h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Propiedades</td>
+                        <td>Descripción</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>objId</td>
+                        <td>El id del objeto que le generara al input</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>El nombre que le asignara al label del input</td>
+                    </tr>
+                    <tr>
+                        <td>selected</td>
+                        <td>
+                            El objeto que le asignara al option<br/> Es un objeto, para obtener el valor usar "obj.id"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>optons</td>
+                        <td>La lista de objetos a iterar</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <h4>HTML</h4>
+                <pre rel="HTML">
+                        <code style="float:left" [innerHTML]="codeHtml">
+                       
+                        </code>                        
+                    </pre>
+            </div>
+            <div>
+                <h4>JS</h4>
+                <pre rel="HTML">
+                    <code style="float:left" [innerHTML]="codeJs">
+                       
+                        </code>                        
+                    </pre>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="componentTitle">
+                        Example
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <my-dropdown objId="demo" name="Demo-Label" [(options)]="dropdownOptions" [(selected)]="selected">
+                        </my-dropdown>
+                    </div>
+                    <div>
+                        Valor del dropdown : {{selected.id}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

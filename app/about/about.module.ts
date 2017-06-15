@@ -6,13 +6,15 @@ import { SharedModule } from '../shared/shared.module';
 import { AboutMainComponent } from './aboutMain.component'; 
 import { AboutCheckbox } from './components/aboutCheckbox';
 import { AboutDatebox } from './components/aboutDatebox';
+import { AboutDropdown } from './components/aboutDropdown';
 
 
 @NgModule({
     declarations: [
         AboutMainComponent,
         AboutCheckbox,
-        AboutDatebox
+        AboutDatebox,
+        AboutDropdown
     ],
     imports: [
         SharedModule,
@@ -20,6 +22,7 @@ import { AboutDatebox } from './components/aboutDatebox';
             { path: 'about', component: AboutMainComponent },
             { path: 'aboutCheckbox', component: AboutCheckbox }, 
             { path: 'aboutDatebox', component: AboutDatebox }, 
+            { path: 'aboutDropdown', component: AboutDropdown }, 
         ])
     ],
     providers: [ 

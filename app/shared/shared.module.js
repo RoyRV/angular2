@@ -12,6 +12,7 @@ var forms_1 = require("@angular/forms");
 var start_component_1 = require("../shared/start.component");
 var my_checkbox_1 = require("../shared/components/my-checkbox");
 var my_datebox_1 = require("../shared/components/my-datebox");
+var my_dropdown_1 = require("../shared/components/my-dropdown");
 var SharedModule = (function () {
     function SharedModule() {
     }
@@ -23,16 +24,19 @@ SharedModule = __decorate([
             start_component_1.StartComponent,
             my_checkbox_1.MyCheckbox,
             my_datebox_1.MyDatebox,
+            my_dropdown_1.MyDropdown
         ],
         imports: [
-            common_1.CommonModule
+            common_1.CommonModule,
+            forms_1.FormsModule
         ],
         exports: [
             common_1.CommonModule,
             forms_1.FormsModule,
             start_component_1.StartComponent,
             my_checkbox_1.MyCheckbox,
-            my_datebox_1.MyDatebox
+            my_datebox_1.MyDatebox,
+            my_dropdown_1.MyDropdown
         ]
     })
 ], SharedModule);

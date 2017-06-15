@@ -12,6 +12,7 @@ var shared_module_1 = require("../shared/shared.module");
 var aboutMain_component_1 = require("./aboutMain.component");
 var aboutCheckbox_1 = require("./components/aboutCheckbox");
 var aboutDatebox_1 = require("./components/aboutDatebox");
+var aboutDropdown_1 = require("./components/aboutDropdown");
 var AboutModule = (function () {
     function AboutModule() {
     }
@@ -22,7 +23,8 @@ AboutModule = __decorate([
         declarations: [
             aboutMain_component_1.AboutMainComponent,
             aboutCheckbox_1.AboutCheckbox,
-            aboutDatebox_1.AboutDatebox
+            aboutDatebox_1.AboutDatebox,
+            aboutDropdown_1.AboutDropdown
         ],
         imports: [
             shared_module_1.SharedModule,
@@ -30,6 +32,7 @@ AboutModule = __decorate([
                 { path: 'about', component: aboutMain_component_1.AboutMainComponent },
                 { path: 'aboutCheckbox', component: aboutCheckbox_1.AboutCheckbox },
                 { path: 'aboutDatebox', component: aboutDatebox_1.AboutDatebox },
+                { path: 'aboutDropdown', component: aboutDropdown_1.AboutDropdown },
             ])
         ],
         providers: []

@@ -8,7 +8,7 @@ import { Component, OnChanges, Input, Output, OnInit, EventEmitter } from '@angu
 })
 
 
-export class MyCheckbox     {
+export class MyCheckbox {
     @Input() objId: string;
     @Input() name: string;
     @Input() class: string;
