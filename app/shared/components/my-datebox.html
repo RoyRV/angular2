@@ -1,0 +1,13 @@
+<div>
+    <label id="dateboxLabel{{objId}}">{{name}}</label>
+    <input type="text" 
+           id="dateboxInput{{objId}}" 
+           (placeholder)="format" 
+           (value)="value" 
+           [ngClass]=""
+    />
+    <i class="fa fa-calendar" (click)="openCalendar()"></i>
+</div>
+<div>
+    Is valid date {{isValidDate}}
+</div>

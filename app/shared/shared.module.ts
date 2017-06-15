@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { StartComponent } from '../shared/start.component';
 import { MyCheckbox } from '../shared/components/my-checkbox';
+import { MyDatebox } from '../shared/components/my-datebox';
 
 @NgModule({
     declarations: [
         StartComponent,
-        MyCheckbox
+        MyCheckbox,
+        MyDatebox,
     ],
     imports: [
         CommonModule
@@ -16,7 +18,8 @@ import { MyCheckbox } from '../shared/components/my-checkbox';
         CommonModule,
         FormsModule,
         StartComponent,
-        MyCheckbox
+        MyCheckbox,
+        MyDatebox
     ]
 })
 export class SharedModule { }
