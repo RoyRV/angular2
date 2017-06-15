@@ -19,6 +19,17 @@ var AboutCheckbox = (function () {
         this.infoValue = false;
         this.warningValue = true;
         this.errorValue = false;
+        this.codeHtml = "";
+        this.codeJs = "";
+        this.codeHtml = '&lt;my-checkbox ' +
+            'objId="demo" ' +
+            'name="Demo-Label" ' +
+            '[(value)]="defaultValue"' +
+            '&gt;<br/>' +
+            '&lt;/my-checkbox&gt;';
+        this.codeJs = 'public defaultValue: boolean = true;<br/><br/>' +
+            'constructor() { <br/>' +
+            ' this.defaultValue = true;<br/>}';
     }
     return AboutCheckbox;
 }());

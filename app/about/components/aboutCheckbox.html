@@ -3,7 +3,7 @@
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="componentTitle">
-                   title
+                   {{title}}
                 </h3>
             </div>
             <div class="panel-body">
@@ -36,17 +36,17 @@
                 <div>
                     <h4>HTML</h4>
                     <pre rel="HTML">
-                        <!--<code style="float:left" innerhtml.bind="codeHtml">
+                        <code style="float:left" [innerHTML]="codeHtml">
                        
-                        </code>-->
+                        </code>
                     </pre>
                 </div>
                 <div>
                     <h4>JS</h4>
                     <pre rel="HTML">
-                        <!--<code style="float:left" innerhtml.bind="codeJs">
+                        <code style="float:left" [innerHTML]="codeJs">
                        
-                        </code>-->
+                        </code>
                     </pre>
                 </div>
                 <div class="panel panel-info">
@@ -63,64 +63,60 @@
                                                  name="Default"
                                                  [(value)]="defaultValue">
                                     </my-checkbox>
-                                    <!--<my-checkbox obj-id="demo"
-                                                 name="Default"
-                                                 value.bind="defaultValue">
-                                    </my-checkbox>-->
                                     <div>
                                         Valor del Checkbox : {{defaultValue}}
                                     </div>
                                 </td> 
                                 <td>
-                                    <!--<my-checkbox obj-id="demoPrimary"
+                                    <my-checkbox objId="demoPrimary"
                                                  name="Primary"
-                                                 value.bind="primaryValue"
+                                                 [(value)]="primaryValue"
                                                  class="checkbox-primary">
-                                    </my-checkbox>-->
+                                    </my-checkbox>
                                     <div>
-                                        Valor del Checkbox :primaryValue
+                                        Valor del Checkbox : {{primaryValue}}
                                     </div>
                                 </td> 
                                 <td>
-                                    <!--<my-checkbox obj-id="demoSucess"
+                                    <my-checkbox objId="demoSucess"
                                                  name="Sucess"
-                                                 value.bind="sucessValue"
+                                                 [(value)]="sucessValue"
                                                  class="checkbox-success">
-                                    </my-checkbox>-->
+                                    </my-checkbox>
                                     <div>
-                                        Valor del Checkbox :sucessValue
+                                        Valor del Checkbox : {{sucessValue}}
                                     </div>
                                 </td> 
                             </tr>
                             <tr>
                                 <td>
-                                    <!--<my-checkbox obj-id="demoInfo"
+                                    <my-checkbox objId="demoInfo"
                                                  name="Info"
-                                                 value.bind="infoValue"
+                                                 [(value)]="infoValue"
                                                  class="checkbox-info">
-                                    </my-checkbox>-->
+                                    </my-checkbox>
                                     <div>
-                                        Valor del Checkbox :infoValue
+                                        Valor del Checkbox : {{infoValue}}
                                     </div>
                                 </td> 
                                 <td>
-                                    <!--<my-checkbox obj-id="demoWarning"
+                                    <my-checkbox objId="demoWarning"
                                                  name="Warning"
-                                                 value.bind="warningValue"
+                                                 [(value)]="warningValue"
                                                  class="checkbox-warning">
-                                    </my-checkbox>-->
+                                    </my-checkbox>
                                     <div>
-                                        Valor del Checkbox :warningValue
+                                        Valor del Checkbox : {{warningValue}}
                                     </div>
                                 </td> 
                                 <td>
-                                    <!--<my-checkbox obj-id="demoDanger"
+                                    <my-checkbox objId="demoDanger"
                                                  name="Danger"
-                                                 value.bind="errorValue"
+                                                 [(value)]="errorValue"
                                                  class="checkbox-danger">
-                                    </my-checkbox>-->
+                                    </my-checkbox>
                                     <div>
-                                        Valor del Checkbox :errorValue
+                                        Valor del Checkbox : {{errorValue}}
                                     </div>
                                 </td> 
                             </tr>

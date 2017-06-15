@@ -9,8 +9,6 @@ import { Component, OnChanges, Input, Output, OnInit, EventEmitter } from '@angu
 
 
 export class MyCheckbox     {
-     
-
     @Input() objId: string;
     @Input() name: string;
     @Input() class: string;
@@ -20,7 +18,7 @@ export class MyCheckbox     {
     constructor() {
         this.valueChange = new EventEmitter<boolean>();
     }
-    
+
     checked() {
         this.value = !this.value;
         this.valueChange.emit(this.value);

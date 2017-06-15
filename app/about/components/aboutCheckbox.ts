@@ -5,17 +5,25 @@ import { Component } from '@angular/core';
     styleUrls : ['app/about/aboutMain.component.css' ]
 })
 export class AboutCheckbox {
-    public title: string = 'About Checkbox';
+    private title: string = 'About Checkbox';
 
-    public defaultValue: boolean = true;
-    public primaryValue: boolean = false;
-    public sucessValue: boolean = true;
-    public infoValue: boolean = false;
-    public warningValue: boolean = true;
-    public errorValue: boolean = false; 
-
-
+    private defaultValue: boolean = true;
+    private primaryValue: boolean = false;
+    private sucessValue: boolean = true;
+    private infoValue: boolean = false;
+    private warningValue: boolean = true;
+    private errorValue: boolean = false; 
+    private codeHtml : string = "";
+    private codeJs : string = "";
     constructor() {
-
+        this.codeHtml = '&lt;my-checkbox ' +
+            'objId="demo" ' +
+            'name="Demo-Label" ' +
+            '[(value)]="defaultValue"' +
+            '&gt;<br/>' +
+            '&lt;/my-checkbox&gt;';
+        this.codeJs = 'public defaultValue: boolean = true;<br/><br/>'+
+            'constructor() { <br/>' +
+            ' this.defaultValue = true;<br/>}';
     }
 }
