@@ -5,13 +5,15 @@ import { StartComponent } from '../shared/start.component';
 import { MyCheckbox } from '../shared/components/my-checkbox';
 import { MyDatebox } from '../shared/components/my-datebox';
 import { MyDropdown } from '../shared/components/my-dropdown';
+import { MyLabel } from '../shared/components/my-label';
 
 @NgModule({
     declarations: [
         StartComponent,
         MyCheckbox,
         MyDatebox,
-        MyDropdown 
+        MyDropdown ,
+        MyLabel
     ],
     imports: [
         CommonModule,
@@ -23,7 +25,8 @@ import { MyDropdown } from '../shared/components/my-dropdown';
         StartComponent,
         MyCheckbox,
         MyDatebox,
-        MyDropdown 
+        MyDropdown ,
+        MyLabel
     ]
 })
 export class SharedModule { }

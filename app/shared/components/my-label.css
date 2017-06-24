@@ -1,0 +1,7 @@
+[id^="labelComponent"] {
+	font-weight: bold;
+}
+
+[id^="labelComponent"] [id^="labelComponentValue"] {
+	font-weight: initial;
+}
