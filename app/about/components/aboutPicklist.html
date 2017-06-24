@@ -1,0 +1,133 @@
+<div class="componentContainer">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="componentTitle">
+                {{title}}
+            </h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Propiedades</td>
+                        <td>Descripción</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>objId</td>
+                        <td>
+                            El id del objeto que le generara al input
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>
+                            El label referente que mostrara referido a la lista de objetos
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>list</td>
+                        <td>
+                            La lista de objetos para iterar<br /> * Estos objetos tienen que tener las propiedades Id, Text
+                            y checked
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>class (opcional) - default : ''</td>
+                        <td>
+                            El nombre del estilo de la clase que se le quiera asignar al checkbox
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>alignment(opcional) - default : ''</td>
+                        <td>
+                            El alineamiento que tendran los checkbox, por defecto es vertical <br /> En caso sea horizontal
+                            , asignarle el valor
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>selectAll (opcional) - default : false</td>
+                        <td>
+                            En caso se quiera un checkbox adicional para hacer el selectAll
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <h4>HTML</h4>
+                <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeHtml">
+                       
+                        </code>                        
+                    </pre>
+            </div>
+            <div>
+                <h4>JS</h4>
+                <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeJs">
+                       
+                    </code>                        
+                </pre>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="componentTitle">
+                        Example
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped table-bordered">
+                        <tr>
+                            <td>
+                                <my-picklist objId="picklistDemo"
+                                             name="PickList demo" 
+                                             [(list)]="list">
+                                </my-picklist>
+                                <div>
+                                    Selected values of Default list [ {{selectedDefaultList}} ]
+                                </div>
+                            </td>
+                            <td>
+                                <my-picklist objId="picklistPrimary" 
+                                                name="PickList Primary" 
+                                                [(list)]="listPrimary" 
+                                                class="checkbox-primary" 
+                                                selectAll="true">
+                                </my-picklist>
+                                <div>
+                                    Selected values of Default list [ {{selectedPrimaryList}} ]
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <my-picklist objId="picklistInfo" 
+                                                 name="PickList Info" 
+                                                 [(list)]="listInfo" 
+                                                 class="checkbox-info" 
+                                                 alignment="horizontal">
+                                </my-picklist>
+                                <div>
+                                    Selected values of Default list [ {{selectedInfoList}} ]
+                                </div>
+                            </td>
+                            <td>
+                                <my-picklist objId="picklistDanger" 
+                                             name="PickList Danger" 
+                                             [(list)]="listDanger" 
+                                             class="checkbox-danger" 
+                                             alignment="horizontal"
+                                             selectAll="true">
+                                </my-picklist>
+                                <div>
+                                    Selected values of Default list [ {{selectedDangerList}} ]
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

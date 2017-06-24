@@ -1,0 +1,25 @@
+<div>
+    <label id="pickListLabel{{objId}}">{{name}}</label>
+    <div  class="checkbox {{class}} {{alignment}}"
+          id="picklistContainer{{objId}}-All"
+          *ngIf="selectAll">
+        <input type="checkbox"
+               [(checked)]="allChecked" 
+               id="pickListInputAll{{objId}}"
+               name="pickListInputAll{{objId}}" 
+               (change)="checkAll()"
+               [(indeterminate)]="allIndeterminate"/>
+        <label attr.for="pickListInputAll{{objId}}">All</label>
+    </div>
+    <div *ngFor="let option of list"
+         class="checkbox {{class}} {{alignment}}"
+         id="picklistContainer{{objId}}-{{option.id}}">
+        <input type="checkbox"  
+               [(checked)]="option.checked"
+               model.bind="option"
+               id="pickListInput{{objId}}-{{option.id}}" 
+               name="pickListInput{{objId}}-{{option.id}}" 
+               (change)="singleCheck(option)"/>
+        <label attr.for="pickListInput{{objId}}-{{option.id}}" > {{option.text}}</label>
+    </div>
+</div>

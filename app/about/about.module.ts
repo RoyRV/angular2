@@ -8,6 +8,7 @@ import { AboutCheckbox } from './components/aboutCheckbox';
 import { AboutDatebox } from './components/aboutDatebox';
 import { AboutDropdown } from './components/aboutDropdown';
 import { AboutLabel } from './components/aboutLabel';
+import { AboutPicklist } from './components/aboutPicklist';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AboutLabel } from './components/aboutLabel';
         AboutCheckbox,
         AboutDatebox,
         AboutDropdown,
-        AboutLabel
+        AboutLabel,
+        AboutPicklist
     ],
     imports: [
         SharedModule,
@@ -25,7 +27,8 @@ import { AboutLabel } from './components/aboutLabel';
             { path: 'aboutCheckbox', component: AboutCheckbox }, 
             { path: 'aboutDatebox', component: AboutDatebox }, 
             { path: 'aboutDropdown', component: AboutDropdown },
-            { path: 'aboutLabel', component: AboutLabel }
+            { path: 'aboutLabel', component: AboutLabel },
+            { path: 'aboutPicklist', component: AboutPicklist }
         ])
     ],
     providers: [ 
