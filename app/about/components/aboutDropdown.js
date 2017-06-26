@@ -15,12 +15,11 @@ var AboutDropdown = (function () {
         this.title = "About Dropdown";
         this.codeHtml = "";
         this.codeJs = "";
-        this.codeJs = "JS";
         this.codeHtml = '&lt;my-dropdown ' +
-            'obj-id="demo" ' +
+            'objId="demo" ' +
             'name="Demo-Label" ' +
-            'selected.bind="selected" ' +
-            'options.bind="dropdownOptions" ' +
+            '[(selected)]="selected" ' +
+            '[(options)]="dropdownOptions" ' +
             '&gt;<br/>' +
             '&lt;/my-dropdown&gt;';
         this.codeJs = 'constructor() { <br/>' +

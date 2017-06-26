@@ -13,12 +13,11 @@ export class AboutDropdown {
     private selected : any;
     
     constructor() {
-        this.codeJs = "JS";
         this.codeHtml = '&lt;my-dropdown ' +
-            'obj-id="demo" ' +
+            'objId="demo" ' +
             'name="Demo-Label" ' +
-            'selected.bind="selected" ' +
-            'options.bind="dropdownOptions" ' +
+            '[(selected)]="selected" ' +
+            '[(options)]="dropdownOptions" ' +
             '&gt;<br/>' +
             '&lt;/my-dropdown&gt;';
         this.codeJs = 'constructor() { <br/>' +
