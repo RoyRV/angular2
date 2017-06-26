@@ -9,6 +9,7 @@ import { AboutDatebox } from './components/aboutDatebox';
 import { AboutDropdown } from './components/aboutDropdown';
 import { AboutLabel } from './components/aboutLabel';
 import { AboutPicklist } from './components/aboutPicklist';
+import { AboutTextbox } from './components/aboutTextbox';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AboutPicklist } from './components/aboutPicklist';
         AboutDatebox,
         AboutDropdown,
         AboutLabel,
-        AboutPicklist
+        AboutPicklist,
+        AboutTextbox
     ],
     imports: [
         SharedModule,
@@ -28,7 +30,8 @@ import { AboutPicklist } from './components/aboutPicklist';
             { path: 'aboutDatebox', component: AboutDatebox }, 
             { path: 'aboutDropdown', component: AboutDropdown },
             { path: 'aboutLabel', component: AboutLabel },
-            { path: 'aboutPicklist', component: AboutPicklist }
+            { path: 'aboutPicklist', component: AboutPicklist },
+            { path: 'aboutTextbox', component: AboutTextbox }
         ])
     ],
     providers: [ 

@@ -1,0 +1,9 @@
+<div class="form-group textboxContainer">
+    <label class="control-label" attr.for="{{objId}}">{{name}}</label>
+    <input type="text" 
+    class="form-control" 
+    id="textboxInput{{objId}}" 
+    [placeholder]="placeholder" 
+    [(ngModel)]="value"
+    (ngModelChange)="valueChanged()" />
+</div>
