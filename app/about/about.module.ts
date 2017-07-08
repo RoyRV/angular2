@@ -10,6 +10,7 @@ import { AboutDropdown } from './components/aboutDropdown';
 import { AboutLabel } from './components/aboutLabel';
 import { AboutPicklist } from './components/aboutPicklist';
 import { AboutTextbox } from './components/aboutTextbox';
+import { AboutRadioButton } from './components/aboutRadioButton';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { AboutTextbox } from './components/aboutTextbox';
         AboutDropdown,
         AboutLabel,
         AboutPicklist,
-        AboutTextbox
+        AboutTextbox,
+        AboutRadioButton
     ],
     imports: [
         SharedModule,
@@ -31,7 +33,8 @@ import { AboutTextbox } from './components/aboutTextbox';
             { path: 'aboutDropdown', component: AboutDropdown },
             { path: 'aboutLabel', component: AboutLabel },
             { path: 'aboutPicklist', component: AboutPicklist },
-            { path: 'aboutTextbox', component: AboutTextbox }
+            { path: 'aboutTextbox', component: AboutTextbox },
+            { path: 'aboutRadioButton', component: AboutRadioButton }
         ])
     ],
     providers: [ 

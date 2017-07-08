@@ -16,6 +16,7 @@ var aboutDropdown_1 = require("./components/aboutDropdown");
 var aboutLabel_1 = require("./components/aboutLabel");
 var aboutPicklist_1 = require("./components/aboutPicklist");
 var aboutTextbox_1 = require("./components/aboutTextbox");
+var aboutRadioButton_1 = require("./components/aboutRadioButton");
 var AboutModule = (function () {
     function AboutModule() {
     }
@@ -30,7 +31,8 @@ AboutModule = __decorate([
             aboutDropdown_1.AboutDropdown,
             aboutLabel_1.AboutLabel,
             aboutPicklist_1.AboutPicklist,
-            aboutTextbox_1.AboutTextbox
+            aboutTextbox_1.AboutTextbox,
+            aboutRadioButton_1.AboutRadioButton
         ],
         imports: [
             shared_module_1.SharedModule,
@@ -41,7 +43,8 @@ AboutModule = __decorate([
                 { path: 'aboutDropdown', component: aboutDropdown_1.AboutDropdown },
                 { path: 'aboutLabel', component: aboutLabel_1.AboutLabel },
                 { path: 'aboutPicklist', component: aboutPicklist_1.AboutPicklist },
-                { path: 'aboutTextbox', component: aboutTextbox_1.AboutTextbox }
+                { path: 'aboutTextbox', component: aboutTextbox_1.AboutTextbox },
+                { path: 'aboutRadioButton', component: aboutRadioButton_1.AboutRadioButton }
             ])
         ],
         providers: []

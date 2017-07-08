@@ -1,0 +1,8 @@
+<div class="left radio {{class}}">
+    <input  id="radioInput{{objId}}" 
+            type="radio" 
+            [checked]="value"
+            (click)="valueChanged()" />
+    <label  id="radioLabel{{objId}}" 
+            attr.for="radioInput{{objId}}">{{name}}</label>
+</div>

@@ -1,24 +1,24 @@
 import { Component, OnChanges, Input, Output, OnInit, EventEmitter } from '@angular/core';
 
 @Component({
-    selector: 'my-checkbox',
+    selector: 'my-radiobutton',
     moduleId: module.id,
-    templateUrl: './my-checkbox.html',
-    styleUrls: ['./my-checkbox.css']
+    templateUrl: './my-radiobutton.html',
+    styleUrls: ['./my-radiobutton.css']
 })
 
-export class MyCheckbox {
+export class MyRadioButton {
     @Input() objId: string;
     @Input() name: string;
-    @Input() class: string;
     @Input() value: boolean;
+    @Input() class: string;
     @Output() valueChange: EventEmitter<boolean>;
 
     constructor() {
         this.valueChange = new EventEmitter<boolean>();
     }
 
-    checked() {
+    valueChanged(): void {
         this.value = !this.value;
         this.valueChange.emit(this.value);
     }
