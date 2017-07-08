@@ -1,0 +1,11 @@
+<div class="form-group textareaContainer">
+        <label class="control-label" attr.for="<textareaInput></textareaInput>{{objId}}">{{name}}</label>
+        <textarea type="text"
+               class="form-control"
+               id="textareaInput{{objId}}"
+               [placeholder]="placeholder"
+               [(ngModel)]="value"
+                (ngModelChange)="valueChanged()" 
+               rows="4"  >
+        </textarea>
+    </div>

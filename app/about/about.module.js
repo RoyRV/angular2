@@ -17,6 +17,7 @@ var aboutLabel_1 = require("./components/aboutLabel");
 var aboutPicklist_1 = require("./components/aboutPicklist");
 var aboutTextbox_1 = require("./components/aboutTextbox");
 var aboutRadioButton_1 = require("./components/aboutRadioButton");
+var aboutTextarea_1 = require("./components/aboutTextarea");
 var AboutModule = (function () {
     function AboutModule() {
     }
@@ -32,7 +33,8 @@ AboutModule = __decorate([
             aboutLabel_1.AboutLabel,
             aboutPicklist_1.AboutPicklist,
             aboutTextbox_1.AboutTextbox,
-            aboutRadioButton_1.AboutRadioButton
+            aboutRadioButton_1.AboutRadioButton,
+            aboutTextarea_1.AboutTextarea
         ],
         imports: [
             shared_module_1.SharedModule,
@@ -44,7 +46,8 @@ AboutModule = __decorate([
                 { path: 'aboutLabel', component: aboutLabel_1.AboutLabel },
                 { path: 'aboutPicklist', component: aboutPicklist_1.AboutPicklist },
                 { path: 'aboutTextbox', component: aboutTextbox_1.AboutTextbox },
-                { path: 'aboutRadioButton', component: aboutRadioButton_1.AboutRadioButton }
+                { path: 'aboutRadioButton', component: aboutRadioButton_1.AboutRadioButton },
+                { path: 'aboutTextarea', component: aboutTextarea_1.AboutTextarea }
             ])
         ],
         providers: []

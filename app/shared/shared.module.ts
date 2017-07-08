@@ -9,6 +9,7 @@ import { MyLabel } from '../shared/components/my-label';
 import { MyPicklist } from '../shared/components/my-picklist';
 import { MyTextbox } from '../shared/components/my-textbox';
 import { MyRadioButton } from '../shared/components/my-radiobutton';
+import { MyTextarea } from '../shared/components/my-textarea';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import { MyRadioButton } from '../shared/components/my-radiobutton';
         MyLabel,
         MyPicklist,
         MyTextbox,
-        MyRadioButton
+        MyRadioButton,
+        MyTextarea
     ],
     imports: [
         CommonModule,
@@ -35,7 +37,8 @@ import { MyRadioButton } from '../shared/components/my-radiobutton';
         MyLabel,
         MyPicklist,
         MyTextbox,
-        MyRadioButton
+        MyRadioButton,
+        MyTextarea
     ]
 })
 export class SharedModule { }

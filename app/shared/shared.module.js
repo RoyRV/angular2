@@ -17,6 +17,7 @@ var my_label_1 = require("../shared/components/my-label");
 var my_picklist_1 = require("../shared/components/my-picklist");
 var my_textbox_1 = require("../shared/components/my-textbox");
 var my_radiobutton_1 = require("../shared/components/my-radiobutton");
+var my_textarea_1 = require("../shared/components/my-textarea");
 var SharedModule = (function () {
     function SharedModule() {
     }
@@ -32,7 +33,8 @@ SharedModule = __decorate([
             my_label_1.MyLabel,
             my_picklist_1.MyPicklist,
             my_textbox_1.MyTextbox,
-            my_radiobutton_1.MyRadioButton
+            my_radiobutton_1.MyRadioButton,
+            my_textarea_1.MyTextarea
         ],
         imports: [
             common_1.CommonModule,
@@ -48,7 +50,8 @@ SharedModule = __decorate([
             my_label_1.MyLabel,
             my_picklist_1.MyPicklist,
             my_textbox_1.MyTextbox,
-            my_radiobutton_1.MyRadioButton
+            my_radiobutton_1.MyRadioButton,
+            my_textarea_1.MyTextarea
         ]
     })
 ], SharedModule);
