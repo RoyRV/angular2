@@ -17,35 +17,35 @@ var MyDropdown = (function () {
     MyDropdown.prototype.onChange = function () {
         this.selectedChange.emit(this.selected);
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyDropdown.prototype, "objId", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyDropdown.prototype, "name", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Boolean)
+    ], MyDropdown.prototype, "selected", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Array)
+    ], MyDropdown.prototype, "options", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], MyDropdown.prototype, "selectedChange", void 0);
+    MyDropdown = __decorate([
+        core_1.Component({
+            selector: 'my-dropdown',
+            moduleId: module.id,
+            templateUrl: './my-dropdown.html'
+        }),
+        __metadata("design:paramtypes", [])
+    ], MyDropdown);
     return MyDropdown;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyDropdown.prototype, "objId", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyDropdown.prototype, "name", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], MyDropdown.prototype, "selected", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Array)
-], MyDropdown.prototype, "options", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], MyDropdown.prototype, "selectedChange", void 0);
-MyDropdown = __decorate([
-    core_1.Component({
-        selector: 'my-dropdown',
-        moduleId: module.id,
-        templateUrl: './my-dropdown.html'
-    }),
-    __metadata("design:paramtypes", [])
-], MyDropdown);
 exports.MyDropdown = MyDropdown;
 //# sourceMappingURL=my-dropdown.js.map

@@ -11,13 +11,13 @@ var AboutMainComponent = (function () {
     function AboutMainComponent() {
         this.pageTitle = 'Welcome';
     }
+    AboutMainComponent = __decorate([
+        core_1.Component({
+            templateUrl: 'app/about/aboutMain.component.html',
+            styleUrls: ['app/about/aboutMain.component.css']
+        })
+    ], AboutMainComponent);
     return AboutMainComponent;
 }());
-AboutMainComponent = __decorate([
-    core_1.Component({
-        templateUrl: 'app/about/aboutMain.component.html',
-        styleUrls: ['app/about/aboutMain.component.css']
-    })
-], AboutMainComponent);
 exports.AboutMainComponent = AboutMainComponent;
 //# sourceMappingURL=aboutMain.component.js.map

@@ -28,14 +28,14 @@ var AboutDatebox = (function () {
         this.codeJs = 'constructor() { <br/>' +
             ' this.defaultValue = "05/10/2017";<br/>}';
     }
+    AboutDatebox = __decorate([
+        core_1.Component({
+            templateUrl: 'app/about/components/aboutDatebox.html',
+            styleUrls: ['app/about/aboutMain.component.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutDatebox);
     return AboutDatebox;
 }());
-AboutDatebox = __decorate([
-    core_1.Component({
-        templateUrl: 'app/about/components/aboutDatebox.html',
-        styleUrls: ['app/about/aboutMain.component.css']
-    }),
-    __metadata("design:paramtypes", [])
-], AboutDatebox);
 exports.AboutDatebox = AboutDatebox;
 //# sourceMappingURL=aboutDatebox.js.map

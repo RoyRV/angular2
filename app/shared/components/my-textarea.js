@@ -17,40 +17,40 @@ var MyTextarea = (function () {
     MyTextarea.prototype.valueChanged = function () {
         this.valueChange.emit(this.value);
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyTextarea.prototype, "objId", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyTextarea.prototype, "name", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyTextarea.prototype, "value", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyTextarea.prototype, "class", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyTextarea.prototype, "placeholder", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], MyTextarea.prototype, "valueChange", void 0);
+    MyTextarea = __decorate([
+        core_1.Component({
+            selector: 'my-textarea',
+            moduleId: module.id,
+            templateUrl: './my-textarea.html',
+            styleUrls: ['./my-textarea.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], MyTextarea);
     return MyTextarea;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyTextarea.prototype, "objId", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyTextarea.prototype, "name", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyTextarea.prototype, "value", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyTextarea.prototype, "class", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyTextarea.prototype, "placeholder", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], MyTextarea.prototype, "valueChange", void 0);
-MyTextarea = __decorate([
-    core_1.Component({
-        selector: 'my-textarea',
-        moduleId: module.id,
-        templateUrl: './my-textarea.html',
-        styleUrls: ['./my-textarea.css']
-    }),
-    __metadata("design:paramtypes", [])
-], MyTextarea);
 exports.MyTextarea = MyTextarea;
 //# sourceMappingURL=my-textarea.js.map

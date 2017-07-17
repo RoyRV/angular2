@@ -31,14 +31,14 @@ var AboutRadioButton = (function () {
         this.codeJs = 'constructor() { <br/>' +
             ' this.defaultValue = true;<br/>}';
     }
+    AboutRadioButton = __decorate([
+        core_1.Component({
+            templateUrl: 'app/about/components/aboutRadioButton.html',
+            styleUrls: ['app/about/aboutMain.component.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutRadioButton);
     return AboutRadioButton;
 }());
-AboutRadioButton = __decorate([
-    core_1.Component({
-        templateUrl: 'app/about/components/aboutRadioButton.html',
-        styleUrls: ['app/about/aboutMain.component.css']
-    }),
-    __metadata("design:paramtypes", [])
-], AboutRadioButton);
 exports.AboutRadioButton = AboutRadioButton;
 //# sourceMappingURL=aboutRadioButton.js.map

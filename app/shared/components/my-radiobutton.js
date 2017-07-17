@@ -18,36 +18,36 @@ var MyRadioButton = (function () {
         this.value = !this.value;
         this.valueChange.emit(this.value);
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyRadioButton.prototype, "objId", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyRadioButton.prototype, "name", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Boolean)
+    ], MyRadioButton.prototype, "value", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyRadioButton.prototype, "class", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], MyRadioButton.prototype, "valueChange", void 0);
+    MyRadioButton = __decorate([
+        core_1.Component({
+            selector: 'my-radiobutton',
+            moduleId: module.id,
+            templateUrl: './my-radiobutton.html',
+            styleUrls: ['./my-radiobutton.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], MyRadioButton);
     return MyRadioButton;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyRadioButton.prototype, "objId", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyRadioButton.prototype, "name", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], MyRadioButton.prototype, "value", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyRadioButton.prototype, "class", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], MyRadioButton.prototype, "valueChange", void 0);
-MyRadioButton = __decorate([
-    core_1.Component({
-        selector: 'my-radiobutton',
-        moduleId: module.id,
-        templateUrl: './my-radiobutton.html',
-        styleUrls: ['./my-radiobutton.css']
-    }),
-    __metadata("design:paramtypes", [])
-], MyRadioButton);
 exports.MyRadioButton = MyRadioButton;
 //# sourceMappingURL=my-radiobutton.js.map

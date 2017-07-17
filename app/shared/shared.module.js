@@ -21,39 +21,39 @@ var my_textarea_1 = require("../shared/components/my-textarea");
 var SharedModule = (function () {
     function SharedModule() {
     }
+    SharedModule = __decorate([
+        core_1.NgModule({
+            declarations: [
+                start_component_1.StartComponent,
+                my_checkbox_1.MyCheckbox,
+                my_datebox_1.MyDatebox,
+                my_dropdown_1.MyDropdown,
+                my_label_1.MyLabel,
+                my_picklist_1.MyPicklist,
+                my_textbox_1.MyTextbox,
+                my_radiobutton_1.MyRadioButton,
+                my_textarea_1.MyTextarea
+            ],
+            imports: [
+                common_1.CommonModule,
+                forms_1.FormsModule
+            ],
+            exports: [
+                common_1.CommonModule,
+                forms_1.FormsModule,
+                start_component_1.StartComponent,
+                my_checkbox_1.MyCheckbox,
+                my_datebox_1.MyDatebox,
+                my_dropdown_1.MyDropdown,
+                my_label_1.MyLabel,
+                my_picklist_1.MyPicklist,
+                my_textbox_1.MyTextbox,
+                my_radiobutton_1.MyRadioButton,
+                my_textarea_1.MyTextarea
+            ]
+        })
+    ], SharedModule);
     return SharedModule;
 }());
-SharedModule = __decorate([
-    core_1.NgModule({
-        declarations: [
-            start_component_1.StartComponent,
-            my_checkbox_1.MyCheckbox,
-            my_datebox_1.MyDatebox,
-            my_dropdown_1.MyDropdown,
-            my_label_1.MyLabel,
-            my_picklist_1.MyPicklist,
-            my_textbox_1.MyTextbox,
-            my_radiobutton_1.MyRadioButton,
-            my_textarea_1.MyTextarea
-        ],
-        imports: [
-            common_1.CommonModule,
-            forms_1.FormsModule
-        ],
-        exports: [
-            common_1.CommonModule,
-            forms_1.FormsModule,
-            start_component_1.StartComponent,
-            my_checkbox_1.MyCheckbox,
-            my_datebox_1.MyDatebox,
-            my_dropdown_1.MyDropdown,
-            my_label_1.MyLabel,
-            my_picklist_1.MyPicklist,
-            my_textbox_1.MyTextbox,
-            my_radiobutton_1.MyRadioButton,
-            my_textarea_1.MyTextarea
-        ]
-    })
-], SharedModule);
 exports.SharedModule = SharedModule;
 //# sourceMappingURL=shared.module.js.map

@@ -51,40 +51,40 @@ var MyPicklist = (function () {
             }
         }
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyPicklist.prototype, "objId", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyPicklist.prototype, "name", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Array)
+    ], MyPicklist.prototype, "list", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyPicklist.prototype, "class", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyPicklist.prototype, "alignment", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Boolean)
+    ], MyPicklist.prototype, "selectAll", void 0);
+    MyPicklist = __decorate([
+        core_1.Component({
+            selector: 'my-picklist',
+            moduleId: module.id,
+            templateUrl: './my-picklist.html',
+            styleUrls: ['./my-picklist.css', './my-checkbox.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], MyPicklist);
     return MyPicklist;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyPicklist.prototype, "objId", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyPicklist.prototype, "name", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Array)
-], MyPicklist.prototype, "list", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyPicklist.prototype, "class", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyPicklist.prototype, "alignment", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], MyPicklist.prototype, "selectAll", void 0);
-MyPicklist = __decorate([
-    core_1.Component({
-        selector: 'my-picklist',
-        moduleId: module.id,
-        templateUrl: './my-picklist.html',
-        styleUrls: ['./my-picklist.css', './my-checkbox.css']
-    }),
-    __metadata("design:paramtypes", [])
-], MyPicklist);
 exports.MyPicklist = MyPicklist;
 //# sourceMappingURL=my-picklist.js.map

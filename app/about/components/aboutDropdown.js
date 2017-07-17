@@ -41,14 +41,14 @@ var AboutDropdown = (function () {
         ];
         this.selected = this.dropdownOptions[1];
     }
+    AboutDropdown = __decorate([
+        core_1.Component({
+            templateUrl: 'app/about/components/aboutDropdown.html',
+            styleUrls: ['app/about/aboutMain.component.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutDropdown);
     return AboutDropdown;
 }());
-AboutDropdown = __decorate([
-    core_1.Component({
-        templateUrl: 'app/about/components/aboutDropdown.html',
-        styleUrls: ['app/about/aboutMain.component.css']
-    }),
-    __metadata("design:paramtypes", [])
-], AboutDropdown);
 exports.AboutDropdown = AboutDropdown;
 //# sourceMappingURL=aboutDropdown.js.map

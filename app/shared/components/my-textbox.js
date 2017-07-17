@@ -17,40 +17,40 @@ var MyTextbox = (function () {
     MyTextbox.prototype.valueChanged = function () {
         this.valueChange.emit(this.value);
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyTextbox.prototype, "objId", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyTextbox.prototype, "name", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyTextbox.prototype, "value", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyTextbox.prototype, "class", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyTextbox.prototype, "placeholder", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], MyTextbox.prototype, "valueChange", void 0);
+    MyTextbox = __decorate([
+        core_1.Component({
+            selector: 'my-textbox',
+            moduleId: module.id,
+            templateUrl: './my-textbox.html',
+            styleUrls: ['./my-textbox.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], MyTextbox);
     return MyTextbox;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyTextbox.prototype, "objId", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyTextbox.prototype, "name", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyTextbox.prototype, "value", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyTextbox.prototype, "class", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyTextbox.prototype, "placeholder", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], MyTextbox.prototype, "valueChange", void 0);
-MyTextbox = __decorate([
-    core_1.Component({
-        selector: 'my-textbox',
-        moduleId: module.id,
-        templateUrl: './my-textbox.html',
-        styleUrls: ['./my-textbox.css']
-    }),
-    __metadata("design:paramtypes", [])
-], MyTextbox);
 exports.MyTextbox = MyTextbox;
 //# sourceMappingURL=my-textbox.js.map

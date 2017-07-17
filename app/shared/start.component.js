@@ -21,23 +21,23 @@ var StartComponent = (function () {
     StartComponent.prototype.onClick = function () {
         this.ratingClicked.emit('the rating ' + this.rating + " was clicked!");
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Number)
+    ], StartComponent.prototype, "rating", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], StartComponent.prototype, "ratingClicked", void 0);
+    StartComponent = __decorate([
+        core_1.Component({
+            selector: 'ai-star',
+            moduleId: module.id,
+            templateUrl: 'star.component.html',
+            styleUrls: ['star.component.css']
+        })
+    ], StartComponent);
     return StartComponent;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Number)
-], StartComponent.prototype, "rating", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], StartComponent.prototype, "ratingClicked", void 0);
-StartComponent = __decorate([
-    core_1.Component({
-        selector: 'ai-star',
-        moduleId: module.id,
-        templateUrl: 'star.component.html',
-        styleUrls: ['star.component.css']
-    })
-], StartComponent);
 exports.StartComponent = StartComponent;
 //# sourceMappingURL=start.component.js.map

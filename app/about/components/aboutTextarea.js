@@ -26,14 +26,14 @@ var AboutTextarea = (function () {
         this.codeJs = 'constructor() { <br/>' +
             ' this.defaultValue = "Roy Rojas";<br/>}';
     }
+    AboutTextarea = __decorate([
+        core_1.Component({
+            templateUrl: 'app/about/components/aboutTextarea.html',
+            styleUrls: ['app/about/aboutMain.component.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutTextarea);
     return AboutTextarea;
 }());
-AboutTextarea = __decorate([
-    core_1.Component({
-        templateUrl: 'app/about/components/aboutTextarea.html',
-        styleUrls: ['app/about/aboutMain.component.css']
-    }),
-    __metadata("design:paramtypes", [])
-], AboutTextarea);
 exports.AboutTextarea = AboutTextarea;
 //# sourceMappingURL=aboutTextarea.js.map

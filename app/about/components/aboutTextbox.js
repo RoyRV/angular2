@@ -28,14 +28,14 @@ var AboutTextbox = (function () {
         this.codeJs = 'constructor() { <br/>' +
             ' this.defaultValue = "Roy Rojas";<br/>}';
     };
+    AboutTextbox = __decorate([
+        core_1.Component({
+            templateUrl: 'app/about/components/aboutTextbox.html',
+            styleUrls: ['app/about/aboutMain.component.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutTextbox);
     return AboutTextbox;
 }());
-AboutTextbox = __decorate([
-    core_1.Component({
-        templateUrl: 'app/about/components/aboutTextbox.html',
-        styleUrls: ['app/about/aboutMain.component.css']
-    }),
-    __metadata("design:paramtypes", [])
-], AboutTextbox);
 exports.AboutTextbox = AboutTextbox;
 //# sourceMappingURL=aboutTextbox.js.map

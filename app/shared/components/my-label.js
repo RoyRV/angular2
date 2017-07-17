@@ -13,27 +13,27 @@ var core_1 = require("@angular/core");
 var MyLabel = (function () {
     function MyLabel() {
     }
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyLabel.prototype, "objId", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyLabel.prototype, "name", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyLabel.prototype, "value", void 0);
+    MyLabel = __decorate([
+        core_1.Component({
+            selector: 'my-label',
+            moduleId: module.id,
+            templateUrl: './my-label.html',
+            styleUrls: ['./my-label.css']
+        })
+    ], MyLabel);
     return MyLabel;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyLabel.prototype, "objId", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyLabel.prototype, "name", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyLabel.prototype, "value", void 0);
-MyLabel = __decorate([
-    core_1.Component({
-        selector: 'my-label',
-        moduleId: module.id,
-        templateUrl: './my-label.html',
-        styleUrls: ['./my-label.css']
-    })
-], MyLabel);
 exports.MyLabel = MyLabel;
 //# sourceMappingURL=my-label.js.map

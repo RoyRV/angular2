@@ -18,36 +18,36 @@ var MyCheckbox = (function () {
         this.value = !this.value;
         this.valueChange.emit(this.value);
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyCheckbox.prototype, "objId", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyCheckbox.prototype, "name", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyCheckbox.prototype, "class", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Boolean)
+    ], MyCheckbox.prototype, "value", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], MyCheckbox.prototype, "valueChange", void 0);
+    MyCheckbox = __decorate([
+        core_1.Component({
+            selector: 'my-checkbox',
+            moduleId: module.id,
+            templateUrl: './my-checkbox.html',
+            styleUrls: ['./my-checkbox.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], MyCheckbox);
     return MyCheckbox;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyCheckbox.prototype, "objId", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyCheckbox.prototype, "name", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyCheckbox.prototype, "class", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], MyCheckbox.prototype, "value", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], MyCheckbox.prototype, "valueChange", void 0);
-MyCheckbox = __decorate([
-    core_1.Component({
-        selector: 'my-checkbox',
-        moduleId: module.id,
-        templateUrl: './my-checkbox.html',
-        styleUrls: ['./my-checkbox.css']
-    }),
-    __metadata("design:paramtypes", [])
-], MyCheckbox);
 exports.MyCheckbox = MyCheckbox;
 //# sourceMappingURL=my-checkbox.js.map

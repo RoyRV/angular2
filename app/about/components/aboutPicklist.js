@@ -86,14 +86,14 @@ var AboutPicklist = (function () {
         enumerable: true,
         configurable: true
     });
+    AboutPicklist = __decorate([
+        core_1.Component({
+            templateUrl: 'app/about/components/aboutPicklist.html',
+            styleUrls: ['app/about/aboutMain.component.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutPicklist);
     return AboutPicklist;
 }());
-AboutPicklist = __decorate([
-    core_1.Component({
-        templateUrl: 'app/about/components/aboutPicklist.html',
-        styleUrls: ['app/about/aboutMain.component.css']
-    }),
-    __metadata("design:paramtypes", [])
-], AboutPicklist);
 exports.AboutPicklist = AboutPicklist;
 //# sourceMappingURL=aboutPicklist.js.map

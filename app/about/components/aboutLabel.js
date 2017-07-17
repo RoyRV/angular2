@@ -25,14 +25,14 @@ var AboutLabel = (function () {
         this.codeJs = 'constructor() { <br/>' +
             ' this.labelValue = "Valor XXX de un label";<br/>}';
     }
+    AboutLabel = __decorate([
+        core_1.Component({
+            templateUrl: 'app/about/components/aboutLabel.html',
+            styleUrls: ['app/about/aboutMain.component.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutLabel);
     return AboutLabel;
 }());
-AboutLabel = __decorate([
-    core_1.Component({
-        templateUrl: 'app/about/components/aboutLabel.html',
-        styleUrls: ['app/about/aboutMain.component.css']
-    }),
-    __metadata("design:paramtypes", [])
-], AboutLabel);
 exports.AboutLabel = AboutLabel;
 //# sourceMappingURL=aboutLabel.js.map

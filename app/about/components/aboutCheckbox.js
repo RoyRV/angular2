@@ -31,14 +31,14 @@ var AboutCheckbox = (function () {
             'constructor() { <br/>' +
             ' this.defaultValue = true;<br/>}';
     }
+    AboutCheckbox = __decorate([
+        core_1.Component({
+            templateUrl: 'app/about/components/aboutCheckbox.html',
+            styleUrls: ['app/about/aboutMain.component.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutCheckbox);
     return AboutCheckbox;
 }());
-AboutCheckbox = __decorate([
-    core_1.Component({
-        templateUrl: 'app/about/components/aboutCheckbox.html',
-        styleUrls: ['app/about/aboutMain.component.css']
-    }),
-    __metadata("design:paramtypes", [])
-], AboutCheckbox);
 exports.AboutCheckbox = AboutCheckbox;
 //# sourceMappingURL=aboutCheckbox.js.map

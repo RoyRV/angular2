@@ -32,16 +32,16 @@ var ProductListComponent = (function () {
     ProductListComponent.prototype.onRatingClicked = function (message) {
         this.pageTitle = 'Product List ' + message;
     };
+    ProductListComponent = __decorate([
+        core_1.Component({
+            selector: 'pm-products',
+            moduleId: module.id,
+            templateUrl: 'product-list.component.html',
+            styleUrls: ['product-list.component.css']
+        }),
+        __metadata("design:paramtypes", [product_service_1.ProductService])
+    ], ProductListComponent);
     return ProductListComponent;
 }());
-ProductListComponent = __decorate([
-    core_1.Component({
-        selector: 'pm-products',
-        moduleId: module.id,
-        templateUrl: 'product-list.component.html',
-        styleUrls: ['product-list.component.css']
-    }),
-    __metadata("design:paramtypes", [product_service_1.ProductService])
-], ProductListComponent);
 exports.ProductListComponent = ProductListComponent;
 //# sourceMappingURL=product-list.component.js.map

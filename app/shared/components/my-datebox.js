@@ -32,39 +32,39 @@ var MyDatebox = (function () {
         // let input = $('#dateboxInput' + this.objId);
         // input.datepicker('show');
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyDatebox.prototype, "objId", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyDatebox.prototype, "name", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyDatebox.prototype, "value", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], MyDatebox.prototype, "format", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Boolean)
+    ], MyDatebox.prototype, "isRequired", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Boolean)
+    ], MyDatebox.prototype, "isValidDate", void 0);
+    MyDatebox = __decorate([
+        core_1.Component({
+            selector: 'my-datebox',
+            moduleId: module.id,
+            templateUrl: './my-datebox.html',
+            styleUrls: ['./my-datebox.css']
+        })
+    ], MyDatebox);
     return MyDatebox;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyDatebox.prototype, "objId", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyDatebox.prototype, "name", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyDatebox.prototype, "value", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], MyDatebox.prototype, "format", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], MyDatebox.prototype, "isRequired", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], MyDatebox.prototype, "isValidDate", void 0);
-MyDatebox = __decorate([
-    core_1.Component({
-        selector: 'my-datebox',
-        moduleId: module.id,
-        templateUrl: './my-datebox.html',
-        styleUrls: ['./my-datebox.css']
-    })
-], MyDatebox);
 exports.MyDatebox = MyDatebox;
 //# sourceMappingURL=my-datebox.js.map
