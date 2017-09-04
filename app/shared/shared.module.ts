@@ -10,6 +10,7 @@ import { MyPicklist } from '../shared/components/my-picklist';
 import { MyTextbox } from '../shared/components/my-textbox';
 import { MyRadioButton } from '../shared/components/my-radiobutton';
 import { MyTextarea } from '../shared/components/my-textarea';
+import { DatePickerModule } from 'ng2-datepicker';
 
 @NgModule({
     declarations: [
@@ -24,8 +25,9 @@ import { MyTextarea } from '../shared/components/my-textarea';
         MyTextarea
     ],
     imports: [
-        CommonModule,
-        FormsModule
+        CommonModule, 
+        FormsModule,
+        DatePickerModule 
     ],
     exports: [
         CommonModule,

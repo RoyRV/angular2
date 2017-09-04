@@ -4,9 +4,10 @@
            id="dateboxInput{{objId}}" 
            (placeholder)="format" 
            (value)="value" 
-           [ngClass]=""
-    />
+           [ngClass]=""/>
     <i class="fa fa-calendar" (click)="openCalendar()"></i>
+
+    <ng2-datepicker [options]="options" [(ngModel)]="date"></ng2-datepicker>
 </div>
 <div>
     Is valid date {{isValidDate}}

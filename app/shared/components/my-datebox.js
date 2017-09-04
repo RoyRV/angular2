@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var $ = require('node_modules/jquery/dist/jquery.min.js');
+var ng2_datepicker_1 = require("ng2-datepicker");
 var MyDatebox = (function () {
     function MyDatebox() {
         this.objId = "demo";
@@ -21,6 +22,7 @@ var MyDatebox = (function () {
         this.isValidDate = true;
     }
     MyDatebox.prototype.ngOnInit = function () {
+        this.options = new ng2_datepicker_1.DatePickerOptions();
         // let input = $('#dateboxInput' + this.objId);
         // let self = this;
         // input.datepicker({

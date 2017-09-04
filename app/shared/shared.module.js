@@ -18,6 +18,7 @@ var my_picklist_1 = require("../shared/components/my-picklist");
 var my_textbox_1 = require("../shared/components/my-textbox");
 var my_radiobutton_1 = require("../shared/components/my-radiobutton");
 var my_textarea_1 = require("../shared/components/my-textarea");
+var ng2_datepicker_1 = require("ng2-datepicker");
 var SharedModule = (function () {
     function SharedModule() {
     }
@@ -36,7 +37,8 @@ var SharedModule = (function () {
             ],
             imports: [
                 common_1.CommonModule,
-                forms_1.FormsModule
+                forms_1.FormsModule,
+                ng2_datepicker_1.DatePickerModule
             ],
             exports: [
                 common_1.CommonModule,

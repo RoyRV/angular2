@@ -1,6 +1,6 @@
 import { Component, OnChanges, Input, Output, OnInit, EventEmitter } from '@angular/core';
 let $ = require('node_modules/jquery/dist/jquery.min.js');
-
+import { DatePickerOptions, DateModel } from 'ng2-datepicker';
 
 @Component({
     selector: 'my-datebox',
@@ -16,9 +16,11 @@ export class MyDatebox implements OnInit {
     @Input() format: string = 'MM/DD/YYYY';
     @Input() isRequired: boolean = false;
     @Input() isValidDate: boolean = true;
-
+    date: DateModel;
+    options: DatePickerOptions;
 
     ngOnInit(): void {
+        this.options = new DatePickerOptions();
         // let input = $('#dateboxInput' + this.objId);
         // let self = this;
         // input.datepicker({
