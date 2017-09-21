@@ -16,18 +16,40 @@ require("rxjs/add/operator/map");
 require("rxjs/add/operator/do");
 require("rxjs/add/operator/catch");
 var ProductService = (function () {
+    //private _getProductsUrl = "api/products/products.json";
     function ProductService(_http) {
         this._http = _http;
-        this._productUrl = "api/products/products.json";
+        this._getProductsUrl = "http://localhost:55472/api/product/getall";
+        this._getProductByIdUrl = "http://localhost:55472/api/product/getbyid?id=";
+        this._addProductdUrl = "http://localhost:55472/api/Product/AddProducto";
+        this._updateProductdUrl = "http://localhost:55472/api/Product/UpdateProducto";
+        this._deleteProductdUrl = "http://localhost:55472/api/Product/DeleteProducto";
     }
     ProductService.prototype.getProducts = function () {
-        return this._http.get(this._productUrl)
+        return this._http.get(this._getProductsUrl)
             .map(function (response) { return response.json(); })
             .catch(this.handleError);
     };
     ProductService.prototype.getProductById = function (id) {
-        return this.getProducts()
-            .map(function (products) { return products.find(function (p) { return p.productId === id; }); });
+        var _url = this._getProductByIdUrl + String(id);
+        return this._http.get(_url)
+            .map(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ProductService.prototype.addProduct = function (product) {
+        var req = this._http.post(this._addProductdUrl, product);
+        return req.map(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ProductService.prototype.updateProduct = function (product) {
+        var req = this._http.post(this._updateProductdUrl, product);
+        return req.map(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ProductService.prototype.deleteProduct = function (product) {
+        var req = this._http.post(this._deleteProductdUrl, product);
+        return req.map(function (response) { return response.json(); })
+            .catch(this.handleError);
     };
     ProductService.prototype.handleError = function (error) {
         console.log("error", error);

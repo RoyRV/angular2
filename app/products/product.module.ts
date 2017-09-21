@@ -6,12 +6,16 @@ import { ProductDetailGuard } from './product-guard.service';
 import { ProductService } from './product.service';
 import { ProductDetailComponent } from './product-detail.component';
 import { ProductFilterPipe } from './product-filter.pipe';
+import { ProductAddComponent } from './product-add.component';
+import { ProductUpdateComponent } from './product-update.component';
 
 @NgModule({
     declarations: [
         ProductListComponent,
         ProductDetailComponent,
         ProductFilterPipe,
+        ProductAddComponent,
+        ProductUpdateComponent
     ],
     imports: [
         SharedModule,
@@ -21,6 +25,11 @@ import { ProductFilterPipe } from './product-filter.pipe';
                 path: 'product/:id',
                 component: ProductDetailComponent,
                 canActivate: [ProductDetailGuard]
+            },
+            { path: 'productAdd', component: ProductAddComponent },
+            {
+                path: 'productUpdate/:id',
+                component: ProductUpdateComponent
             },
         ])
     ],

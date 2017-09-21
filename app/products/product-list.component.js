@@ -11,9 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var product_service_1 = require("./product.service");
+var router_1 = require("@angular/router");
 var ProductListComponent = (function () {
-    function ProductListComponent(_productService) {
+    function ProductListComponent(_productService, _router) {
         this._productService = _productService;
+        this._router = _router;
+        this.isAdmin = false;
         this.showImage = false;
         this.imageWidth = 50;
         this.imageMargin = 2;
@@ -25,12 +28,45 @@ var ProductListComponent = (function () {
         this.showImage = !this.showImage;
     };
     ProductListComponent.prototype.ngOnInit = function () {
+        this.listar();
+    };
+    ProductListComponent.prototype.listar = function () {
         var _this = this;
         this._productService.getProducts()
             .subscribe(function (products) { return _this.products = products; }, function (error) { return _this.errorMessage = error; });
     };
     ProductListComponent.prototype.onRatingClicked = function (message) {
-        this.pageTitle = 'Product List ' + message;
+        // this.pageTitle = 'Product List '+message;
+    };
+    ProductListComponent.prototype.addProduct = function () {
+        if (!this.isAdmin) {
+            alert("No tiene permisos de administrador para agregar un producto");
+            return;
+        }
+        this._router.navigate(['/productAdd']);
+    };
+    ProductListComponent.prototype.deleteProduct = function (producto) {
+        var _this = this;
+        var confirmado = confirm("Esta seguro de eliminar?");
+        if (confirmado) {
+            if (!this.isAdmin) {
+                alert("No tiene permisos de administrador para eliminar un producto");
+                return;
+            }
+            var respuesta = this._productService.deleteProduct(producto)
+                .subscribe(function (isDeleted) {
+                if (isDeleted) {
+                    alert("Se eliminó producto");
+                    _this.listar();
+                }
+                else {
+                    alert("No se eliminó el producto");
+                }
+            });
+        }
+    };
+    ProductListComponent.prototype.checked = function () {
+        this.isAdmin = !this.isAdmin;
     };
     ProductListComponent = __decorate([
         core_1.Component({
@@ -39,7 +75,7 @@ var ProductListComponent = (function () {
             templateUrl: 'product-list.component.html',
             styleUrls: ['product-list.component.css']
         }),
-        __metadata("design:paramtypes", [product_service_1.ProductService])
+        __metadata("design:paramtypes", [product_service_1.ProductService, router_1.Router])
     ], ProductListComponent);
     return ProductListComponent;
 }());

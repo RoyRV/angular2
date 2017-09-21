@@ -11,14 +11,12 @@ var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var start_component_1 = require("../shared/start.component");
 var my_checkbox_1 = require("../shared/components/my-checkbox");
-var my_datebox_1 = require("../shared/components/my-datebox");
 var my_dropdown_1 = require("../shared/components/my-dropdown");
 var my_label_1 = require("../shared/components/my-label");
 var my_picklist_1 = require("../shared/components/my-picklist");
 var my_textbox_1 = require("../shared/components/my-textbox");
 var my_radiobutton_1 = require("../shared/components/my-radiobutton");
 var my_textarea_1 = require("../shared/components/my-textarea");
-var ng2_datepicker_1 = require("ng2-datepicker");
 var SharedModule = (function () {
     function SharedModule() {
     }
@@ -27,7 +25,6 @@ var SharedModule = (function () {
             declarations: [
                 start_component_1.StartComponent,
                 my_checkbox_1.MyCheckbox,
-                my_datebox_1.MyDatebox,
                 my_dropdown_1.MyDropdown,
                 my_label_1.MyLabel,
                 my_picklist_1.MyPicklist,
@@ -37,15 +34,13 @@ var SharedModule = (function () {
             ],
             imports: [
                 common_1.CommonModule,
-                forms_1.FormsModule,
-                ng2_datepicker_1.DatePickerModule
+                forms_1.FormsModule
             ],
             exports: [
                 common_1.CommonModule,
                 forms_1.FormsModule,
                 start_component_1.StartComponent,
                 my_checkbox_1.MyCheckbox,
-                my_datebox_1.MyDatebox,
                 my_dropdown_1.MyDropdown,
                 my_label_1.MyLabel,
                 my_picklist_1.MyPicklist,

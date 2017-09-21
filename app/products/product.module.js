@@ -14,6 +14,8 @@ var product_guard_service_1 = require("./product-guard.service");
 var product_service_1 = require("./product.service");
 var product_detail_component_1 = require("./product-detail.component");
 var product_filter_pipe_1 = require("./product-filter.pipe");
+var product_add_component_1 = require("./product-add.component");
+var product_update_component_1 = require("./product-update.component");
 var ProductModule = (function () {
     function ProductModule() {
     }
@@ -23,6 +25,8 @@ var ProductModule = (function () {
                 product_list_component_1.ProductListComponent,
                 product_detail_component_1.ProductDetailComponent,
                 product_filter_pipe_1.ProductFilterPipe,
+                product_add_component_1.ProductAddComponent,
+                product_update_component_1.ProductUpdateComponent
             ],
             imports: [
                 shared_module_1.SharedModule,
@@ -32,6 +36,11 @@ var ProductModule = (function () {
                         path: 'product/:id',
                         component: product_detail_component_1.ProductDetailComponent,
                         canActivate: [product_guard_service_1.ProductDetailGuard]
+                    },
+                    { path: 'productAdd', component: product_add_component_1.ProductAddComponent },
+                    {
+                        path: 'productUpdate/:id',
+                        component: product_update_component_1.ProductUpdateComponent
                     },
                 ])
             ],

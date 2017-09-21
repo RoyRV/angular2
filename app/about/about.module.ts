@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { SharedModule } from '../shared/shared.module';
 import { AboutMainComponent } from './aboutMain.component'; 
 import { AboutCheckbox } from './components/aboutCheckbox';
-import { AboutDatebox } from './components/aboutDatebox';
+
 import { AboutDropdown } from './components/aboutDropdown';
 import { AboutLabel } from './components/aboutLabel';
 import { AboutPicklist } from './components/aboutPicklist';
@@ -17,7 +17,7 @@ import { AboutTextarea } from './components/aboutTextarea';
     declarations: [
         AboutMainComponent,
         AboutCheckbox,
-        AboutDatebox,
+        
         AboutDropdown,
         AboutLabel,
         AboutPicklist,
@@ -30,7 +30,7 @@ import { AboutTextarea } from './components/aboutTextarea';
         RouterModule.forChild([
             { path: 'about', component: AboutMainComponent },
             { path: 'aboutCheckbox', component: AboutCheckbox }, 
-            { path: 'aboutDatebox', component: AboutDatebox }, 
+            
             { path: 'aboutDropdown', component: AboutDropdown },
             { path: 'aboutLabel', component: AboutLabel },
             { path: 'aboutPicklist', component: AboutPicklist },

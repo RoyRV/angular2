@@ -1,28 +1,37 @@
 <div class="panel panel-primary">
     <div class="panel-heading">
-    {{pageTitle}}
+        {{pageTitle}}
     </div>
     <div class="panel-body">
         <div class="row">
-            <div class="col-md-2">Filter By</div>
+            <div class="col-md-2">
+                    Es administrador
+            </div>
             <div class="col-md-4">
-                <input type="Text" 
-                        [(ngModel)]='listFilter' />
+              
+                    <my-checkbox objId="Admin" name="" [(value)]="isAdmin">
+                                </my-checkbox>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <h3>Filtered By: {{listFilter}}</h3>
+            <button class="btn btn-primary" (click)='addProduct()'>Add new Product</button>
             </div>
         </div>
-        <div  class="table-responsive">
+        <div class="row">
+            <div class="col-md-2">Filter By</div>
+            <div class="col-md-4">
+                <input type="Text" [(ngModel)]='listFilter' />
+            </div>
+        </div>
+        <div class="table-responsive">
             <table class="table" *ngIf='products && products.length'>
                 <thead>
                     <tr>
                         <th>
-                            <button class="btn btn-primary"
-                                    (click)='toogleImage()'>{{showImage? 'Hide':'Show'}} Image</button>
+                            <button class="btn btn-primary" (click)='toogleImage()'>{{showImage? 'Hide':'Show'}} Image</button>
                         </th>
+                        <th></th>
                         <th>Product</th>
                         <th>Code</th>
                         <th>Available</th>
@@ -33,27 +42,40 @@
                 <tbody>
                     <tr *ngFor='let product of products | productFilter:listFilter'>
                         <td>
-                            <img *ngIf='showImage'
-                                [src]='product.imageUrl' 
-                                [title]="product.productName"
-                                [style.width.px]='imageWidth'
-                                [style.margin.px]='imageMargin' > 
+
+                            <img *ngIf='showImage && product.imageUrl!=""' 
+                            [src]='product.imageUrl'
+                            [title]="product.productName" 
+                            [style.width.px]='imageWidth' 
+                            [style.margin.px]='imageMargin'>
+                            <label *ngIf='showImage && product.imageUrl==""' >
+                                Imagen no disponible
+                            </label>
                         </td>
-                        <td> 
-                            <a [routerLink]="['/product',product.productId]" >  
+                        <td>
+                            <a [routerLink]="['/productUpdate',product.productId]">  
+                                <button class="btn btn-info">
+                                    <i class="fa fa-pencil"></i>
+                                </button>
+                            </a>
+                            <button class="btn btn-danger" (click)="deleteProduct(product)">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </td>
+                        <td>
+                            <a [routerLink]="['/product',product.productId]">  
                                 {{product.productName}}
                             </a>
                         </td>
                         <td>{{product.productCode | lowercase}}</td>
-                        <td>{{product.releaseDate}}</td>
-                        <td>{{product.price | currency:'USD':true:'1.2-2'   }}</td>
+                        <td>{{product.releaseDate | date: 'dd/MM/yyyy' }}</td>
+                        <td>{{product.price | currency:'USD':true:'1.2-2' }}</td>
                         <td>
-                            <ai-star [rating]='product.starRating'
-                                    (ratingClicked)='onRatingClicked($event)'></ai-star>
+                            <ai-star [rating]='product.starRating' (ratingClicked)='onRatingClicked($event)'></ai-star>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-</div> 
+</div>
